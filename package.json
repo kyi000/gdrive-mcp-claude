@@ -1,0 +1,37 @@
+{
+  "name": "gdrive-mcp-claude",
+  "version": "1.0.0",
+  "description": "Google Drive MCP 서버와 Claude AI를 연동하여 PDF 및 DOC 파일을 분석하고 활용하는 웹 애플리케이션",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/src/index.js",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "build": "cd client && npm run build && cd ../server && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyi000/gdrive-mcp-claude.git"
+  },
+  "keywords": [
+    "google-drive",
+    "mcp",
+    "claude-ai",
+    "pdf",
+    "doc",
+    "document-analysis"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kyi000/gdrive-mcp-claude/issues"
+  },
+  "homepage": "https://github.com/kyi000/gdrive-mcp-claude#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {}
+}
